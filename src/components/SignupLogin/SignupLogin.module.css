@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.signupLoginContainer {
+  padding: 2.5rem;
+}
+
+.radioContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.individualRadioContainer  {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--twenty-px);
+  margin-right: var(--forty-px);
+}
+
+.radioButtons {
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  height: var(--twenty-px);
+  width: var(--twenty-px);
+  margin: 0 var(--ten-px) 0 auto;
+}
+
+.radioText {
+  font-size: 0.9rem;
+  font-weight: 700;
+}

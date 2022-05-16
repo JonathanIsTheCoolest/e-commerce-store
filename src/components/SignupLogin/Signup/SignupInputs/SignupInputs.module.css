@@ -1,0 +1,24 @@
+.inputHolder {
+  position: relative;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: var(--ten-px);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--twenty-px);
+  background-color: var(--background-color);
+}
+
+.eyeIcon svg:hover  {
+  cursor: pointer
+}
+
+.span {
+  line-height: 1;
+}
+
+.errorM {
+  color: var(--red-button-color);
+}

@@ -1,0 +1,76 @@
+.form {
+  max-width: 45ch;
+  min-width: 25ch;
+  text-align: left;
+}
+
+.inputs {
+  width: 100%;
+  height: var(--forty-px);
+  border: 1px solid var(--input-and-line-color);
+  border-radius: 3px;
+  padding-left: var(--ten-px);
+  box-sizing: border-box;
+}
+
+label[type="password"] {
+  position: relative;
+}
+
+.inputs[name="password"],
+.inputs[name="confirmPassword"] {
+  padding-right: var(--forty-px);
+}
+
+.buttons { 
+  color: white; 
+  padding-left: 0;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonTop { 
+  background-color: var(--red-button-color); 
+  margin-top: var(--button-margin);
+}
+
+.buttonBottom { 
+  background-color: var(--blue-button-color); 
+  margin-bottom: var(--button-margin);
+}
+
+.form .or p {
+  text-align: center;
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.form .or p::before,
+.form .or p::after {
+  content: '';
+  display: block;
+  background-color: var(--input-and-line-color);
+  height: 0.1px;
+  width: 45%;
+  position: absolute;
+  top: 50%;
+}
+
+.form .or p::before { left: 0; }
+.form .or p::after { right: 0; }
+
+.facebookIcon {
+  font-size: var(--twenty-px);
+  padding-right: 4%;
+}
+
+.topErrorMessage {
+  color: var(--red-button-color);
+  font-size: var(--twenty-px);
+}
+
+.topErrorMessageSignup { max-width: 45ch; }
+.topErrorMessageLogin { max-width: 27ch; }

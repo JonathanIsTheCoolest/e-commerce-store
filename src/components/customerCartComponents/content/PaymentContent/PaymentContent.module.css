@@ -1,0 +1,35 @@
+input[type="button"] {
+  background-color: var(--red-button-color);
+}
+
+.backToDeliveryButton {
+  border: 1px solid var(--red-button-color);
+  color: var(--red-button-color);
+  background-color: var(--background-color);
+  position: absolute;
+  bottom: var(--twenty-px);
+}
+
+.fixMargin { margin: 0 var(--fifteen-px) 0 0; }
+
+.selectInputs {
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--input-and-line-color);
+  border-right: var(--fifteen-px) solid var(--input-and-line-color);
+  min-width: 6.25rem;
+}
+
+.cvv input {
+  width: 25%;
+}
+
+.paymentButton {
+  width: 100%;
+}
+
+@media screen and (max-width: 410px) {
+  .fixMargin { margin: 0 }
+  .monthYearContainer label h3 { margin-bottom: var(--ten-px); }
+  .cvv input { width: 100% }
+}

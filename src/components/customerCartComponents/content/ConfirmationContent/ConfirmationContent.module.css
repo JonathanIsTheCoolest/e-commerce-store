@@ -1,0 +1,33 @@
+.confirmationBox {
+  text-align: center;
+}
+
+.confirmationBox h2,
+.confirmationBox h3 {
+  margin: 0;
+}
+
+.confirmationBox h2 { text-align: left; }
+
+.confirmationBox p { font-size: var(--twenty-px); }
+
+.circleCheckIcon {
+  color: var(--red-button-color);
+  font-size: var(--seventy-px);
+  margin: var(--forty-px) 0;
+}
+
+.trackButton,
+.homeButton { font-size: var(--twenty-px); }
+
+.trackButton {
+  background-color: var(--background-color);
+  border: 1px solid var(--red-button-color);
+  color: var(--red-button-color);
+  padding: var(--ten-px) var(--seventy-px);
+  margin-bottom: 1.875rem;
+}
+
+.homeButton {
+  background-color: var(--red-button-color);
+}

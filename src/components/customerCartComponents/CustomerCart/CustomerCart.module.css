@@ -1,0 +1,135 @@
+.boxContainer {
+  margin: var(--fifteen-px);
+  display: grid;
+  gap: var(--fifteen-px);
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%;
+  min-width: 300px;
+}
+
+.boxContainer,
+.allBoxes {
+  border-radius: 8px;
+}
+
+
+.allBoxes {
+  padding: var(--twenty-px);
+  box-shadow: 0 0 10px var(--input-and-line-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.summaryBox {
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+}
+
+.contentBox {
+  grid-column: 1 / 2;
+  grid-row: 2 / 6;
+  position: relative;
+}
+
+.extraMarginBottom { padding-bottom: 6.25rem; }
+
+/* Progress Box */
+.progressBox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+}
+
+.progressMarkers {
+  position: relative;
+  font-size: 30px;
+}
+
+.circles {
+  margin: 0 auto;
+  position: relative;
+}
+
+.circleTwo {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: 2;
+}
+
+.circles,
+.circleTwo {
+  width: var(--twenty-px);
+  height: var(--twenty-px);
+  padding: var(--fifteen-px);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: var(--input-and-line-color);
+}
+
+.progressIcons {
+  position: relative;
+  transform: translate(0%, -60%);
+  z-index: 3;
+  font-size: var(--twenty-px);
+}
+
+.cart::after,
+.delivery::after,
+.delivery::before,
+.payment::after,
+.payment::before,
+.confirmation::before {
+  content: '';
+  background-color: var(--input-and-line-color);
+  font-size: 1rem;
+  width: 10em;
+  height: var(--fifteen-px);
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.cartTwo { background-color: var(--circle-color); }
+
+.delivery::before,
+.payment::before,
+.confirmation::before { right: 0; }
+
+.cart::after,
+.delivery::after,
+.payment::after{ left: 0; }
+
+.progressName {
+  font-size: var(--fifteen-px);
+}
+
+@media screen and (max-width: 780px) {
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cart::after,
+  .delivery::after,
+  .delivery::before,
+  .payment::after,
+  .payment::before,
+  .confirmation::before { width: 9em }
+}
+
+@media screen and (max-width: 450px) {
+  .cart::after,
+  .delivery::after,
+  .delivery::before,
+  .payment::after,
+  .payment::before,
+  .confirmation::before { width: 5.5em }
+}

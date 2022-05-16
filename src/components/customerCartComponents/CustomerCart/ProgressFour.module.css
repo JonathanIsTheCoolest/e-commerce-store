@@ -1,0 +1,56 @@
+.cart::after,
+.delivery::after,
+.delivery::before,
+.payment::after,
+.payment::before,
+.confirmation::before {
+  content: '';
+  background-color: var(--input-and-line-color);
+  font-size: 1rem;
+  width: 10em;
+  height: var(--fifteen-px);
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.cartTwo,
+.deliveryTwo,
+.cart::after,
+.delivery::before,
+.paymentTwo,
+.delivery::after,
+.payment::before,
+.confirmationTwo,
+.payment::after,
+.confirmation::before { background-color: var(--circle-color); }
+
+
+.delivery::before,
+.payment::before,
+.confirmation::before { right: 0; }
+
+.cart::after,
+.delivery::after,
+.payment::after{ left: 0; }
+
+@media screen and (max-width: 780px) {
+
+  .cart::after,
+  .delivery::after,
+  .delivery::before,
+  .payment::after,
+  .payment::before,
+  .confirmation::before { width: 9em }
+}
+
+@media screen and (max-width: 450px) {
+  .cart::after,
+  .delivery::after,
+  .delivery::before,
+  .payment::after,
+  .payment::before,
+  .confirmation::before { width: 5.5em }
+}
